@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<!--TODO: ADD FAVICON-->
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mr. Muffler Preston</title>
+        <meta name="viewport"content="width=device-width" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- google font for overpass - used all throughout page -->
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- favicon call -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- disable search engine crawling -->
+        <meta name="robots" content="noindex,nofollow">
+
+
+    </head>
+
+    <body>
+        <!-- ============================================ -->
+        <!--                 Navigation                   -->
+        <!-- ============================================ -->
+        
+        <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="" class="cs-logo" aria-label="back to home">
+                    <img src="images/mufflericon.png" alt="logo" height="50" aria-hidden="true" decoding="async">
+                </a>
+                <!--Navigation List-->
+                <nav class="cs-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link cs-active">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            </div>
+        </header>
+
+        <!-- ============================================ -->
+        <!--                    HEADER                    -->
+        <!-- ============================================ -->
+
+        <section id="hero-1785">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper" font-size="1.25em">Mr. Muffler Preston</span>
+                    <h1 class="cs-title">Total Car Care for Over 25 Years</h1>
+                    <div class="cs-button-group">
+                        <a href="" class="cs-button-solid cs-button1">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <img loading="lazy" decoding="async" src="images/homebanner.jpg" alt="mechanic" width="1920" height="1200" aria-hidden="true">
+            </picture>
+        </section>
+                                
+        <!-- ============================================ -->
+        <!--               Welcome Section                -->
+        <!-- ============================================ -->
+
+        <!-- TODO: IMPLEMENT SCROLLING THING FEAT. JAVASCRIPT -->
+        <section id="sbs-1161">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--slideshow Container-->
+                    <div class="cs-slideshow">
+                         <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 9</div>
+                            <img src="images/slide1.png" style="width:100%" alt="holden torana">
+                            <div class="text">Craig's 1975 Holden LH Torana SLR5000</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 9</div>
+                            <img src="images/slide2.png" style="width:100%" alt="ford falcon">
+                            <div class="text">Damian's 2002 Ford AU Series III Falcon</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 9</div>
+                            <img src="images/slide3.png" style="width:100%" alt="toyota chaser">
+                            <div class="text">Rex's 1996 Toyota Chaser (JZX100)</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 9</div>
+                            <img src="images/slide4.png" style="width:100%" alt="BMW E39">
+                            <div class="text">Scott's 2000 BMW 5 Series (E39)</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 9</div>
+                            <img src="images/slide5.png" style="width:100%" alt="Honda Civic">
+                            <div class="text">J.J's 1992 Honda Civic EG6</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 9</div>
+                            <img src="images/slide6.png" style="width:100%" alt="Holden commodore">
+                            <div class="text">Peter's 1990 Holden VN Commodore Wagon</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 9</div>
+                            <img src="images/slide7.png" style="width:100%" alt="Nissan Skyline">
+                            <div class="text">Tony's 1991 Nissan Skyline GTS-t sedan (R32)</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 9</div>
+                            <img src="images/slide8.png" style="width:100%" alt="chevy corvette">
+                            <div class="text">Robert's 1977 Chevrolet Corvette Stingray (C3)</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 9</div>
+                            <img src="images/slide9.png" style="width:100%" alt="porsche 930">
+                            <div class="text">Akira's 1986 Porsche 911 Turbo (930)</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                    </div>
+
+                </div>
+
+                    <!--Splash Graphic-->
+                    <img class="cs-graphic cs-graphic1" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/splash-4.svg" alt="splash" width="1154" height="505" aria-hidden="true">
+                    <!--Tire Mark-->
+                    <img class="cs-graphic cs-graphic2" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg" alt="tire mark" width="1085" height="322" aria-hidden="true">
+                    <div class="cs-box">
+                        <span class="cs-desc-bold">We Service All Makes and Models!</span>
+                        <span class="cs-desc">From your Pride and Joy to your Daily Driver, and everything in between!</span>
+                    </div>
+
+                </div>
+                <div class="cs-content">
+                    <h2 class="cs-title">Welcome to Mr. Muffler Preston</h2>
+                    <span class="cs-subtitle">Total Car Care Centre</span>
+                    <p class="cs-text">
+                        Mr Muffler Preston has been servicing the Northern suburbs and greater area for over 25 years assisting our customers with their automotive needs. 
+                        From mechanical repairs to log book servicing, high performance exhaust systems to roadworthy certificates, our expert mechanics and friendly staff are 
+                        here to help.
+                    </p> </br>
+                    <p class="cs-text">
+                        We are one of the largest stockers of muffler parts, exhausts and accessories in Victoria, featuring brands such as Magnaflow, Redback, Remus, Supercat and XForce. 
+                        We are serious about mufflers and doubly so about fitting the right part for your car. The components we stock are those that we ourselves install on our cars and that 
+                        are happy to recommend.
+                    </p> </br>
+                    <p class="cs-text">
+                        We also offer while you wait as well as same day drop off and pick up services, prompt service and friendly advice. You can rest assured your car is well looked 
+                        after by Mr Muffler Preston.
+                    </p>
+                    <a href="" class="cs-button-solid">Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        <section id="services-448">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="cs-title">Our Services</h2>
+                    <p class="cs-text">
+                        At Mr. Muffler Preston, we provide a broad range of services, including general maintenance, performance upgrades, and of course, our special custom exhausts.
+                        Feel free to take a look at some of the services our team of quality mechanics can provide you, and your car.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">General Servicing</h3>
+                            <p class="cs-item-text">Maintenance and care to keep your car in top shape.</p>
+                            <a href="" class="cs-link">Read More</a>
+                        </div>
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/services-maintenance.png" alt="mechanic inspection" width="345" height="428">
+                        </picture>
+                    </li>
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Exhaust Systems</h3>
+                            <p class="cs-item-text">Aftermarket and custom exhaust systems to let your engine breathe (and sing!) like it should</p>
+                            <a href="" class="cs-link">Read More</a>
+                        </div>
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/services-exhaust.png" alt="Custom Exhaust" width="345" height="428">
+                        </picture>
+                    </li>
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Performance Tuning</h3>
+                            <p class="cs-item-text">Mechanical and software tuning to boost your car's performance.</p>
+                            <a href="" class="cs-link">Read More</a>
+                        </div>
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/services-tuning.png" alt="VL commodore showing engine" width="345" height="428">
+                        </picture>
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid">See Our Full Range of Services</a>
+            </div>
+        </section>
+             
+        <!-- ============================================ -->
+        <!--                   Reviews                    -->
+        <!-- ============================================ -->
+        <section id="reviews-355">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="cs-title">Customer Testimonials</h2>
+                    <p class="cs-text">
+                        We've been providing the local community with quality auto mechanic services for over two decades. Here is what some of our valued customers have had to say:
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                        <p class="cs-review">
+                            Dear Mr Muffler, I do not know how you revitalised my car but you sure got me out of a difficult situation. 
+                            Who would have thought that a few hours earlier my car was considered for greener pastures, and now it is running the same as I bought it from the showroom floor. 
+                            A big Thank You!
+                        </p>
+                        <span class="cs-name">Linda</span>
+                        <span class="cs-location">Reservoir</span>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                        <p class="cs-review">
+                            Hi. Thanks for having a look at and servicing my Berlina. 
+                            I just can't believe how smoothly it now runs along with the sudden improvement in power. Thanks again and I look forward to seeing you at the next service.
+                        </p>
+                        <span class="cs-name">Peter</span>
+                        <span class="cs-location">Yarraville</span>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                        <p class="cs-review">
+                            Dear George, I cannot express my thanks to you for coming through for me. I was on a tight schedule to get my Corvette ready for my wedding 
+                            (along with many other things going on at the time). 
+                            It was great leaving the church with my honey, who is now my wife, in my 'vette, all starting a new life together. Thanks again!
+                        </p>
+                        <span class="cs-name">Ari</span>
+                        <span class="cs-location">Hallam</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+         
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-269">
+            <div class="cs-container">
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a aria-label="go back to home" class="cs-logo" href="">
+                        <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="images/mufflericon.png" alt="logo" width="240" height="32">
+                    </a>
+                    <p class="cs-text">
+                        Copyright © Mr Muffler Preston. All rights reserved.
+                    </p> </br>
+                    <p class="cs-text">
+                        insert codestitch copyright thing here
+                    </p>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Sitemap</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Home</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">About Us</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Services</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Contact Info -->
+                <ul class="cs-contact">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-contact-li">
+                        <a class="cs-contact-link" href="">(03) 9484 0661</a>
+                    </li>
+                    <li class="cs-contact-li">
+                        <a class="cs-contact-link" href="">mrmufflerpreston@outlook.com</a>
+                    </li>
+                    <li class="cs-contact-li">
+                        <a class="cs-contact-link">Unit 3/108 Bell St, Preston VIC 3072</a>
+                    </li>
+                    <!-- Social Media -->
+                    <li class="cs-contact-li cs-social-group">
+                        <div class="cs-social">
+                            <a class="cs-social-link" aria-label="visit google profile" href="">
+                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                            </a>
+                            <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+                                
+        <!-- carousel javascript script -->
+        <!--TODO: FIX THIS ITS SELECTING ALL THE IMAGES-->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+    </body>
+
+</html>
